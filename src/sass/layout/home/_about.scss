@@ -1,0 +1,54 @@
+.about-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    &__img {
+        width: 140px;
+        height: auto;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            margin-bottom: 80px;
+            height: 85px;
+            width: auto;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            min-height: 65px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .about-content {
+        width: 0;
+        flex-grow: 1;
+        padding-left: 20px;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            width: auto;
+            padding-left: 0;
+        }
+    }
+}
+
+.btn-section--about {
+    margin-top: 20px;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        margin-top: 115px;
+    }
+}

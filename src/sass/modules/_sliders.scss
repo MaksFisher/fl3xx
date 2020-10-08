@@ -1,0 +1,55 @@
+// sliders
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &--build {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        margin-bottom: 30px;
+    }
+
+    span {
+        color: $headings-color;
+        font-size: 17px;
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+        user-select: none;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            margin-left: 20px;
+        }
+
+        .slider-btn {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            svg {
+                fill: $headings-color;
+            }
+
+            &__prev {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

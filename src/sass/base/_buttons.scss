@@ -1,0 +1,112 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	height: 40px;
+	font-size: 14px;
+	border-radius: 2px;
+	width: auto;
+	min-width: 220px;
+
+	&__text {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		flex-grow: 1;
+		transition: all 0.5s ease;
+		padding: 0 25px;
+		white-space: nowrap;
+	}
+
+	&__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 100%;
+	}
+	&:hover {
+		box-shadow: none;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn-primary {
+	.btn__icon {
+		background-color: rgba(#fff, 0.3);
+		svg {
+			fill: #fff;
+		}
+	}
+
+	&:hover {
+		background-color: #fff;
+		.btn__text {
+			color: $primary;
+		}
+		svg {
+			fill: $primary;
+		}
+	}
+	&:focus {
+		background-color: #fff;
+
+		.btn__text {
+			color: $primary;
+		}
+		svg {
+			fill: $primary;
+		}
+	}
+}
+
+.btn-secondary {
+	background-color: #fff;
+
+	.btn__text {
+		color: $primary;
+	}
+
+	.btn__icon {
+		background-color: rgba($primary, 0.3);
+		svg {
+			fill: $primary;
+		}
+	}
+
+	&:hover {
+		background-color: $primary;
+
+		.btn__text {
+			color: #fff;
+		}
+
+		.btn__icon {
+			background-color: transparent;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+
+	&:focus {
+		.btn__text {
+			color: #fff;
+		}
+
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+	box-shadow: none;
+}

@@ -1,0 +1,36 @@
+@import "config/variables";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/spacing";
+
+@import "~flickity/dist/flickity.css";
+@import "config/placeholders";
+@import "config/mixins";
+
+@import "base/base";
+@import "base/buttons";
+@import "base/layout";
+
+@import "modules/sliders";
+@import "modules/burger";
+// @import "modules/fields";
+// @import "modules/cookie";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/news";
+
+// home
+@import "layout/home/management";
+@import "layout/home/about";
+@import "layout/home/good-companie";
+@import "layout/home/cases";

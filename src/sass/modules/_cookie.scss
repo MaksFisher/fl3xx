@@ -1,0 +1,29 @@
+.cookie {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding: 10px 100px;
+    }
+
+    &__text {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $headings-color;
+            text-decoration: underline;
+        }
+    }
+}

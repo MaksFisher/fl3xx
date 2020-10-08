@@ -1,0 +1,8 @@
+section.page-intro-section {
+    padding-top: 470/1680 * 100%;
+    overflow: hidden;
+}
+
+.page-intro-img {
+    @extend .img-full-fit;
+}

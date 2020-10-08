@@ -1,0 +1,133 @@
+header.header-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.header-logo {
+    display: flex;
+    height: 28px;
+
+    img {
+        height: 100%;
+    }
+}
+
+.header-navs {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(101%);
+    background-color: #fff;
+    padding: 65px 60px;
+    transition: all 0.5s ease;
+
+    &--opened {
+        transform: none;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: static;
+        transform: none;
+        padding: 0;
+    }
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        justify-content: start;
+        flex-direction: row;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        padding: 10px 20px;
+        color: $headings-color;
+        position: relative;
+        font-size: 24px;
+        font-weight: 600;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            bottom: 0;
+            height: 2px;
+            background-color: $primary;
+            transition: all 0.5s ease;
+            width: 0;
+        }
+
+        &:hover {
+            color: $headings-color;
+            &:after {
+                width: 15px;
+            }
+        }
+    }
+}
+
+.header-auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        justify-content: start;
+        flex-direction: row;
+    }
+
+    &__item {
+        padding: 10px;
+        color: $headings-color;
+        font-size: 24px;
+        font-weight: 600;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+
+        &--btn {
+            color: $primary;
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                color: $headings-color;
+            }
+
+            &:hover {
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+}

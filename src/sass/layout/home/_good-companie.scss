@@ -1,0 +1,92 @@
+section.good-section {
+    padding: 60px 0;
+    background-image: url(../images/home/good-companie/good-bg.jpg);
+    @extend %bg-cover;
+
+    &--start {
+        padding: 100px 0;
+    }
+}
+
+.good-companie {
+    position: relative;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding: 0 100px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 100px;
+        text-align: center;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            margin-bottom: 65px;
+        }
+
+        &--start {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 100px;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            margin-bottom: 35px;
+        }
+
+        &--start {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__subtext {
+        text-align: center;
+        color: #fff;
+    }
+
+    img {
+        position: absolute;
+
+        &:nth-last-of-type(1) {
+            left: 0;
+            top: 15%;
+
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                top: 20%;
+            }
+        }
+
+        &:nth-last-of-type(2) {
+            right: 0;
+            top: 15%;
+
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                top: 20%;
+            }
+        }
+
+        &:nth-last-of-type(3) {
+            left: 0;
+            bottom: 15%;
+
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                bottom: 0;
+            }
+        }
+
+        &:nth-last-of-type(4) {
+            right: 0;
+            bottom: 15%;
+
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                bottom: 0;
+            }
+        }
+    }
+}

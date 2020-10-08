@@ -1,0 +1,28 @@
+.cases {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 50%;
+        height: auto;
+        text-align: center;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            width: 150px;
+        }
+
+        img {
+            width: 150px;
+
+            @media (min-width: map_get($grid-breakpoints, xl)) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.case-btn {
+    margin-top: 60px;
+}

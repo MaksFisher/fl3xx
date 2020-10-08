@@ -1,0 +1,98 @@
+.img-full-fit {
+    @extend %absolute;
+    @include img-obj(cover, center, center);
+}
+
+.orange {
+    color: $primary;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.btn-section {
+    margin-top: 60px;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        margin-top: 115px;
+    }
+}
+
+// decore section
+
+@media (min-width: map_get($grid-breakpoints, xl)) {
+    .decore-section {
+        z-index: 1;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 40vw;
+            width: 100vw;
+            background-color: #fafaf9;
+            right: -36%;
+            top: 50%;
+            transform: rotate(-57deg) translateY(-50%);
+            z-index: -1;
+        }
+
+        &--left {
+            &:before {
+                right: auto;
+                left: -36%;
+                transform: rotate(57deg) translateY(-50%);
+            }
+        }
+    }
+}
+
+// intro section
+
+section.intro-section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    &--home {
+        height: 600px;
+    }
+}
+
+.intro {
+    &__title {
+        color: #fff;
+    }
+
+    &__text {
+        color: #fff;
+        margin-top: 15px;
+    }
+}
+
+// section header
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    &__label {
+        display: inline-flex;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: rgba(#333, 0.1);
+        color: $headings-color;
+        text-transform: uppercase;
+        padding: 3px 7px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-top: 20px;
+    }
+}
