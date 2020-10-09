@@ -34,6 +34,31 @@
     </div>
 </section>
 
+<section class="timeline-section">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-header__title">The FL3XX Story <span class="orange">10 Years</span> in the Making</h2>
+        </div>
+
+        <div class="timeline">
+            <?php foreach (range(1, 12) as $item) : ?>
+                <div class="timeline-item">
+                    <div class="timeline-inner">
+                        <figure class="timeline-img">
+                            <img src="../images/about/timeline-icon1.svg" alt="">
+                        </figure>
+                        <div class="timeline-content">
+                            <h3 class="timeline-content__title">May 2010 </h3>
+                            <p class="timeline-content__text">First offices - Softwarepark 21, Hagenberg</p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+    </div>
+</section>
 
 
 <div id="otstup"></div>

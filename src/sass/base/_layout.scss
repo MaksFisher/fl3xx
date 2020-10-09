@@ -142,6 +142,10 @@ section.intro-section {
     p {
         color: #fff; 
         margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
