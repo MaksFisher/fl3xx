@@ -1,0 +1,31 @@
+.teamate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &__img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: $primary;
+        font-family: $headings-font-family;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

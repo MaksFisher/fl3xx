@@ -6355,3 +6355,32 @@ section.timeline-section {
   background-color: #f6f6f5;
   transform: translate(-20px, 20px);
 }
+.teamate {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.teamate__img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+  -webkit-filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+  margin-bottom: 30px;
+}
+.teamate__title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.teamate__position {
+  color: #f15a2a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}

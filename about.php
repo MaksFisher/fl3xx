@@ -90,6 +90,38 @@
     </div>
 </section>
 
+<section class="team-section decore-section decore-section--left">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-header__title">Meet Our Team</h2>
+            <a href="#" class="btn btn-primary mt-4">
+                <span class="btn__text">We’re Hiring</span>
+                <div class="btn__icon">
+                    <svg width="15" height="9">
+                        <use xlink:href="#arrow-icon"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div class="row">
+            <?php foreach (range(1, 11) as $item) : ?>
+                <div class="col-xl-3 mb-4">
+                    <div class="teamate">
+                        <div class="teamate__img">
+                            <img src="../images/about/avatar.jpg" alt="" class="img-full-fit">
+                        </div>
+
+                        <h3 class="teamate__title">John Doe</h3>
+                        <p class="teamate__position">Marketing Director</p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
 
 <div id="otstup"></div>
 <?php require_once('views/base/footer.php'); ?>
