@@ -5343,7 +5343,7 @@ section.good-section {
   background-position: center center;
 }
 
-.about-article__img:before, section.intro-section:before, .img-full-fit, .about-article__img img {
+.about-article__img:before, section.call-to-action:before, section.intro-section:before, .img-full-fit, .about-article__img img {
   position: absolute;
   left: 0;
   top: 0;
@@ -5790,6 +5790,108 @@ section.intro-section .container, section.intro-section .breadcrumbs {
   transform: rotate(-45deg) translateY(-50%);
 }
 
+section.good-section {
+  padding: 60px 0;
+  background-image: url(../images/home/good-companie/good-bg.jpg);
+}
+section.good-section--start {
+  padding: 100px 0;
+}
+
+.good-companie {
+  position: relative;
+}
+@media (min-width: 1300px) {
+  .good-companie {
+    padding: 0 100px;
+  }
+}
+.good-companie__title {
+  color: #fff;
+  margin-bottom: 100px;
+  text-align: center;
+}
+@media (min-width: 1300px) {
+  .good-companie__title {
+    margin-bottom: 65px;
+  }
+}
+.good-companie__title--start {
+  margin-bottom: 20px;
+}
+.good-companie__text {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+@media (min-width: 1300px) {
+  .good-companie__text {
+    margin-bottom: 35px;
+  }
+}
+.good-companie__text--start {
+  margin-bottom: 30px;
+}
+.good-companie__subtext {
+  text-align: center;
+  color: #fff;
+}
+.good-companie img {
+  position: absolute;
+}
+.good-companie img:nth-last-of-type(1) {
+  left: 0;
+  top: 15%;
+}
+@media (min-width: 1300px) {
+  .good-companie img:nth-last-of-type(1) {
+    top: 20%;
+  }
+}
+.good-companie img:nth-last-of-type(2) {
+  right: 0;
+  top: 15%;
+}
+@media (min-width: 1300px) {
+  .good-companie img:nth-last-of-type(2) {
+    top: 20%;
+  }
+}
+.good-companie img:nth-last-of-type(3) {
+  left: 0;
+  bottom: 15%;
+}
+@media (min-width: 1300px) {
+  .good-companie img:nth-last-of-type(3) {
+    bottom: 0;
+  }
+}
+.good-companie img:nth-last-of-type(4) {
+  right: 0;
+  bottom: 15%;
+}
+@media (min-width: 1300px) {
+  .good-companie img:nth-last-of-type(4) {
+    bottom: 0;
+  }
+}
+
+section.call-to-action {
+  margin-bottom: 0;
+  padding: 112px 0;
+}
+section.call-to-action:before {
+  content: "";
+  background-color: rgba(15, 21, 31, 0.9);
+  z-index: 2;
+}
+section.call-to-action .container, section.call-to-action .breadcrumbs {
+  position: relative;
+  z-index: 3;
+}
+
 header.header-section {
   position: fixed;
   left: 0;
@@ -6130,94 +6232,6 @@ footer {
 @media (min-width: 1300px) {
   .btn-section--about {
     margin-top: 115px;
-  }
-}
-
-section.good-section {
-  padding: 60px 0;
-  background-image: url(../images/home/good-companie/good-bg.jpg);
-}
-section.good-section--start {
-  padding: 100px 0;
-}
-
-.good-companie {
-  position: relative;
-}
-@media (min-width: 1300px) {
-  .good-companie {
-    padding: 0 100px;
-  }
-}
-.good-companie__title {
-  color: #fff;
-  margin-bottom: 100px;
-  text-align: center;
-}
-@media (min-width: 1300px) {
-  .good-companie__title {
-    margin-bottom: 65px;
-  }
-}
-.good-companie__title--start {
-  margin-bottom: 20px;
-}
-.good-companie__text {
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-style: italic;
-  margin-bottom: 100px;
-}
-@media (min-width: 1300px) {
-  .good-companie__text {
-    margin-bottom: 35px;
-  }
-}
-.good-companie__text--start {
-  margin-bottom: 30px;
-}
-.good-companie__subtext {
-  text-align: center;
-  color: #fff;
-}
-.good-companie img {
-  position: absolute;
-}
-.good-companie img:nth-last-of-type(1) {
-  left: 0;
-  top: 15%;
-}
-@media (min-width: 1300px) {
-  .good-companie img:nth-last-of-type(1) {
-    top: 20%;
-  }
-}
-.good-companie img:nth-last-of-type(2) {
-  right: 0;
-  top: 15%;
-}
-@media (min-width: 1300px) {
-  .good-companie img:nth-last-of-type(2) {
-    top: 20%;
-  }
-}
-.good-companie img:nth-last-of-type(3) {
-  left: 0;
-  bottom: 15%;
-}
-@media (min-width: 1300px) {
-  .good-companie img:nth-last-of-type(3) {
-    bottom: 0;
-  }
-}
-.good-companie img:nth-last-of-type(4) {
-  right: 0;
-  bottom: 15%;
-}
-@media (min-width: 1300px) {
-  .good-companie img:nth-last-of-type(4) {
-    bottom: 0;
   }
 }
 
