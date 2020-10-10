@@ -15,6 +15,10 @@
     text-align: right;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 .btn-section {
     margin-top: 60px;
 
@@ -58,6 +62,7 @@ section.intro-section {
     height: 500px;
     display: flex;
     align-items: center;
+    overflow: visible;
 
     &:before {
         content: "";
@@ -140,7 +145,7 @@ section.intro-section {
     border-left: 3px solid $primary;
 
     p {
-        color: #fff; 
+        color: #fff;
         margin-bottom: 30px;
 
         &:last-child {

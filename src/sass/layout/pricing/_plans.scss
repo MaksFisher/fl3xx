@@ -1,0 +1,68 @@
+section.price-plan-section {
+    overflow: visible;
+    padding-top: 0;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.price-plan {
+    padding: 40px;
+    background-color: #fafaf9;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 50px;
+
+    &__logo {
+        height: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__value {
+        font-weight: 800;
+        font-size: 18px;
+        font-family: $headings-font-family;
+        color: #999;
+
+        span {
+            font-size: 40px;
+            color: $headings-color;
+        }
+    }
+
+    &__periodical {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    &__name {
+        margin-bottom: 15px;
+    }
+
+    &__descript {
+        color: $headings-color;
+        margin-bottom: 20px;
+    }
+}
+
+.plan-list {
+    padding-left: 40px;
+    
+    &__item {
+        position: relative;
+        padding: 5px 0 5px 30px;
+
+        &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $primary;
+            border: 2px solid #f7d7cd;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            border-radius: 50%;
+        }
+    }
+}

@@ -6,7 +6,7 @@ require("./modules/main");
 
 // require("./modules/field");
 
-// require("./modules/select");
+require("./modules/select");
 
 // require("./modules/cookie");
 

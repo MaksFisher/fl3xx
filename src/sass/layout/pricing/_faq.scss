@@ -1,0 +1,49 @@
+section.faq-section {
+    background-color: #fafaf9;
+}
+
+.faq {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    &__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 30px;
+
+        h4 {
+            transition: all 0.5s ease;
+        }
+
+        svg {
+            fill: $primary;
+        }
+    }
+
+    &__answear {
+        padding: 0 30px 0 30px;
+        display: none;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &--opened {
+        .faq__question {
+            h4 {
+                color: $primary;
+            }
+
+            svg {
+                transform: rotate(180deg);
+                fill: $headings-color;
+            }
+        }
+    }
+}

@@ -1,77 +1,42 @@
 $(document).ready(function () {
 
-
-	if ('.select') {
-		initSelectPones();
-	}
-
 	/**
-	 * Initialization phone code DD
-	 */
-	function initSelectPones() {
-
-		const phones = require('../data.json');
-
-		/**
-		 * Init phone code list
-		 */
-		phones.forEach((el, i) => {
-			$('.select-list').append(`<div class="select-list__item">+${el.phoneCode} (${el.code})</div>`)
-		})
-	}
-
-	/**
-	 * toggle select list 
+	 * open/close select
 	 */
 	$('.select-btn').on('click', function () {
-		$('.select').toggleClass('select--opened');
-		$('.select-list').slideToggle();
-	})
+
+		if (!$(this).closest('.select').hasClass('select--opened')) {
+			$('.select--opened').find('.select-list').slideUp();
+			$('.select--opened').removeClass('select--opened');
+		}
+
+		$(this).closest('.select').toggleClass('select--opened');
+		$(this).next().slideToggle();
+	});
 
 	/**
-	 * close select list
+	 * close selects for click outside
 	 */
-	function closeSelect() {
-		$('.select').removeClass('select--opened');
-		$('.select-list').slideUp();
-	}
-
-	$(document).click(function (event) {
-		var $target = $(event.target);
-		if (!$target.closest('.select-btn').length && !$target.closest('.select-list').length) {
-			closeSelect()
+	$(document).on('click', function (event) {
+		let $target = $(event.target);
+		if (!$target.closest($('.select')).length) {
+			$('.select--opened').find('.select-list').slideUp();
+			$('.select--opened').removeClass('select--opened');
 		}
 	});
 
 	/**
-	 * set phone code
+	 * set active option
 	 */
 	$('.select-list__item').on('click', function () {
-		let selectedCode = $(this).text();
-		let selectedFormattedCode = selectedCode.replace(/[^+\d]/g, '');
-		closeSelect();
+		const selectParent = $(this).closest('.select');
+		selectParent.find('.select-result').text($(this).text());
+		selectParent.find('.select-list__item--selected').removeClass('select-list__item--selected');
+		$(this).addClass('select-list__item--selected');
+		selectParent.find('input.form-field-hidden').val($(this).text());
+		$('.select--opened').find('.select-list').slideUp();
+		$('.select--opened').removeClass('select--opened');
 
-		$('.select-btn__code').text(selectedCode);
-		$('#select-result').data('code', selectedFormattedCode);
-
-		mergePhone();
 	})
-
-	/**
-	 * merge phone code and inputing phone
-	 */
-	function mergePhone() {
-		let value = $('.select-input').val().replace(/\D/g, '');
-		$('.select-input').val(value);
-
-		if (value.length) {
-			$('#select-result').val(`${$('#select-result').data('code')}${value}`)
-		} else {
-			$('#select-result').val('');
-		}
-	}
-
-	$('.select-input').on('input', mergePhone);
-
 
 })
