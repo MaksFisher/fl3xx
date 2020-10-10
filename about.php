@@ -25,9 +25,14 @@
 
             <div class="col-xl-6">
                 <div class="intro-description">
-                    <p>At FL3XX we want to solve the biggest problem in business aviation: How to give you back valuable time in your daily workflow.</p>
-                    <p>We are on a mission to enable a world where anyone can fly anywhere on short notice. To do this we automate and optimize aviation, starting with an Aviation Management platform for business aviation.</p>
-                    <p>Every day we deliver solutions and connections that really matter for our consumers. Our platform connects all your necessary services for sales, dispatch, crew, maintenance, and reporting for Trip Support, Corporate Flight Departments, Charter Operators, and Non-Scheduled Operations.</p>
+                    <p>At FL3XX we want to solve the biggest problem in business aviation: How to give you back valuable
+                        time in your daily workflow.</p>
+                    <p>We are on a mission to enable a world where anyone can fly anywhere on short notice. To do this
+                        we automate and optimize aviation, starting with an Aviation Management platform for business
+                        aviation.</p>
+                    <p>Every day we deliver solutions and connections that really matter for our consumers. Our platform
+                        connects all your necessary services for sales, dispatch, crew, maintenance, and reporting for
+                        Trip Support, Corporate Flight Departments, Charter Operators, and Non-Scheduled Operations.</p>
                 </div>
             </div>
         </div>
@@ -56,6 +61,31 @@
                 </div>
             <?php endforeach; ?>
         </div>
+
+    </div>
+</section>
+
+
+<section class="about-article-section">
+    <div class="container">
+
+        <?php foreach (range(1, 3) as $item) : ?>
+            <div class="row about-article">
+                <div class="col-xl-6">
+                    <img src="./images/about/article-decore.svg" alt="" class="about-article__decore">
+                    <h3 class="about-article__title">Our founding</h3>
+                    <p class="about-article__text">We are a diverse group of young people from all over the world, that came
+                        together in Vienna to work on an exciting aviation project; FL3XX. We are always eager to meet new
+                        additions to the team. Do you think that can be you? Then have a look at our careers, or write us an
+                        unsolicited application!</p>
+                </div>
+                <div class="col-xl-6">
+                    <figure class="about-article__img">
+                        <img src="./images/about/about-article.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        <?php endforeach; ?>
 
     </div>
 </section>

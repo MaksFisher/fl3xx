@@ -1,0 +1,39 @@
+.about-article {
+    margin-bottom: 80px;
+    align-items: center;
+
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    &__decore {
+        width: 60px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        @extend .h2;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        padding: 0 30px;
+    }
+
+    &__img {
+        padding-top: 360/480 * 100%;
+        position: relative;
+
+        &:before {
+            content: "";
+            @extend %absolute;
+            background-color: #f6f6f5;
+            transform: translate(-20px, 20px);
+        }
+
+        img {
+            @extend .img-full-fit;
+        }
+    }
+}
